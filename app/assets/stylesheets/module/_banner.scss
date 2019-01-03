@@ -1,0 +1,18 @@
+.banner-container {
+  background-color: white;
+  height: 570px;
+  width: 100vw;
+  // background-color: #E5E5E5;
+  // background:linear-gradient(0deg, #E5E5E5 0% ,#E5E5E5 50% ,white 50% ,white 100%);
+  // background-image: url(https://pbs.twimg.com/profile_images/378800000801125912/b1b2f2a123d4016dcf227c5cc66ddb42.jpeg);
+  // background-size: cover;
+  &__pic {
+    width: 1100px;
+    height: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://pbs.twimg.com/profile_images/378800000801125912/b1b2f2a123d4016dcf227c5cc66ddb42.jpeg);
+    background-size: cover;
+    border: 2px solid #c0c0c0;
+  }
+}

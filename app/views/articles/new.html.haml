@@ -1,0 +1,15 @@
+.post-parent
+  %h1.title
+    新規投稿
+  = form_with model: @article do |f|
+    .form
+      = f.label :タイトル
+      %br
+      = f.text_field :title, class: 'form__title' ,placeholder: 'タイトルを入力してください'
+    .form
+      = f.label :本文
+      %br
+      = f.text_area :content, class: 'form__content', placeholder: '本文を入力してください'
+      %br
+      = f.submit 'POST', class: 'form__bottun'
+

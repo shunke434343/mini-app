@@ -1,0 +1,44 @@
+.post-parent {
+  height: 100vh;
+  .title {
+    width: 200px;
+    padding-top: 110px;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 0.2em;
+    color: #222222;
+    border-bottom: 2px solid #c0c0c0;
+  }
+  .form {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+     &__title {
+      height: 30px;
+      width: 700px;
+      margin-top: 10px;
+      border: 2px solid #c0c0c0;
+      padding: 5px 10px;
+     }
+     &__content {
+      height: 500px;
+      width: 700px;
+      margin-top: 10px;
+      border: 2px solid #c0c0c0;
+      padding: 5px 10px;
+     }
+     &__bottun {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        width: 100px;
+        height: 50px;
+        margin: 20px 0 0 0;
+        background-color: #c0c0c0;
+        border: 2px solid #c0c0c0;
+        margin-bottom: 100px;
+        font-family: 'Archivo Black', sans-serif;
+     }
+  }
+}

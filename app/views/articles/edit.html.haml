@@ -1,0 +1,14 @@
+.post-parent
+  %h1.title
+    編集
+  = form_with model: @article do |f|
+    .form
+      = f.label :タイトル
+      %br
+      = f.text_field :title, class: 'form__title' ,placeholder: @article.title
+    .form
+      = f.label :本文
+      %br
+      = f.text_area :content, class: 'form__content', placeholder: @article.content
+      %br
+      = f.submit 'EDIT', class: 'form__bottun'

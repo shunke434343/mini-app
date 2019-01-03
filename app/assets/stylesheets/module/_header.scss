@@ -1,0 +1,54 @@
+.top {
+  height: 70px;
+  width: 100vw;
+  color: #222222;
+  background-color: #c0c0c0;
+  // border-bottom: 2px solid #c0c0c0;
+  // border-top: 2px solid #c0c0c0;
+  line-height: 70px;
+  display: flex;
+  position: fixed;
+  font-family: 'Archivo Black', sans-serif;
+  &__pagename {
+    color: #3f3f3f;
+    font-size: 30px;
+    margin-left: 80px;
+    width: calc(100vw - 200px);
+    letter-spacing: 0.2em;
+    &__link {
+      text-decoration: double;
+    }
+    &__link:link {
+      color: #262626;
+    }
+    &__link:visited {
+      color: #262626;
+    }
+  }
+  &__account {
+    width: 100px;
+    text-align: center;
+    border-left: 2px solid #c0c0c0;
+    background-color: #BA2636;
+    &__signin {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  &__post {
+    width: 100px;
+    text-align: center;
+    border-left: 2px solid #c0c0c0;
+    border-right: 2px solid #c0c0c0;
+    text-decoration: none;
+    margin-right: 40px;
+    background-color: #2A4073;
+    color: white;
+    &__post {
+      text-decoration: none;
+    }
+    &__post:visited {
+      color: white;
+    }
+  }
+}

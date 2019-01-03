@@ -1,0 +1,23 @@
+.footer {
+  height: 130px;
+  // background:linear-gradient(180deg, #ded6c8 0%, #ded6c8 80%, #E0BE8F 80%, #E0BE8F 100%);
+  background-color: #ded6c8;
+  // background-color: white;
+  padding-left: 180px;
+  // text-align: center;
+  padding-top: 20px;
+  font-family: 'Archivo Black', sans-serif;
+  color: #595959;
+  &__logo {
+    font-size: 25px;
+  }
+  &__logo2 {
+    font-size: 20px;
+  }
+  &__sign {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}

@@ -1,0 +1,48 @@
+.sign-title {
+  width: 500px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 0.2em;
+  color: #222222;
+  font-size: 20px;
+  // border-bottom: 2px solid #c0c0c0;
+  .sign-title {
+    width: 200px;
+    font-size: 30px;
+    border-bottom: 2px solid #c0c0c0;
+    margin: 0px auto 40px;
+  }
+}
+
+.sign-container {
+  text-align: center;
+  width: 100vw;
+  .form {
+    margin-bottom: 20px;
+    .form-label {
+      font-size: 18px;
+    }
+    .form-feild {
+      width: 300px;
+      height: 30px;
+      margin-top: 10px;
+      border: 2px solid #c0c0c0;
+      padding: 5px 10px;
+    }
+  }
+  .form-bottun {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    width: 100px;
+    height: 50px;
+    margin: 20px 0 0 0;
+    background-color: #c0c0c0;
+    border: 2px solid #c0c0c0;
+    margin-bottom: 20px;
+    font-family: 'Archivo Black', sans-serif;
+  }
+}
+

@@ -1,0 +1,33 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title MiniApp
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %header.top
+      %h1.top__pagename
+        = link_to root_path, class: "top__pagename__link" do
+          = fa_icon "book"
+          Whose Blog
+      .top__account
+        - if user_signed_in?
+          = link_to "Sign Out", destroy_user_session_path, method: :delete, class: "top__account__signin"
+        - else
+          = link_to "Sign In", new_user_session_path, class: "top__account__signin"
+      .top__post
+        - if user_signed_in?
+          = link_to "Post", new_article_path, class: "top__post__post"
+        - else
+          = link_to "Sign Up", new_user_registration_path, class: "top__post__post"
+    = yield
+    / %footer.footer
+    /   %h2.footer__logo
+    /     TECH::EXPERT
+    /   %h2.footer__logo2
+    /     Osaka 43th
+    /   %h2.footer__sign
+    /     SHIMIZU SHUNSUKE

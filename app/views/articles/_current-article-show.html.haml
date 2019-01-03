@@ -1,0 +1,4 @@
+.parent__article__right__current-article
+  =link_to "#{article[:title]}", "#{article[:id]}", class: "parent__article__right__current-article__title"
+  %h2.parent__article__right__current-article__date
+    #{article[:created_at].strftime("%Y-%m-%d  %H:%M")}

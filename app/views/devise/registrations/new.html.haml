@@ -1,0 +1,27 @@
+.sign-title
+  %h2.sign-title Sign up
+.sign-container
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = devise_error_messages!
+    .form
+      = f.label :name, class: "form-label"
+      %br/
+      = f.text_field :name, autofocus: true, autocomplete: "name", class: "form-feild", placeholder: '名前'
+    .form
+      = f.label :email, class: "form-label"
+      %br/
+      = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-feild", placeholder: 'メールアドレス'
+    .form
+      = f.label :password, class: "form-label"
+      - if @minimum_password_length
+        %em
+          (#{@minimum_password_length} characters minimum)
+      %br/
+      = f.password_field :password, autocomplete: "new-password", class: "form-feild", placeholder: 'パスワード'
+    .form
+      = f.label :password_confirmation, class: "form-label"
+      %br/
+      = f.password_field :password_confirmation, autocomplete: "new-password", class: "form-feild", placeholder: 'パスワード（確認）'
+    .actions
+      = f.submit "Sign up", class: 'form-bottun'
+  = render "devise/shared/links"

@@ -1,0 +1,27 @@
+.banner-container
+  .banner-container__pic
+
+.parent
+  .parent__article
+    .parent__article__left
+      %h2.parent__article__left__title
+        = @article.title
+      %h2.parent__article__left__date
+        = @article.created_at.strftime("%Y-%m-%d  %H:%M")
+      %h2.parent__article__left__content
+        = safe_join(@article.content.split("\n"), tag(:br))
+      = link_to "編 集", edit_article_path(@article.id), class: "parent__article__left__edit" if user_signed_in?
+      = link_to "削 除", "", method: :delete, class: "parent__article__left__edit" if user_signed_in?
+    .parent__article__right
+      %h2.parent__article__right__current
+        = fa_icon "bookmark"
+        最近の投稿
+      - @articles.each do |article|
+        = render "current-article-show", article: article
+%footer.footer
+  %h2.footer__logo
+    TECH::EXPERT
+  %h2.footer__logo2
+    Osaka 43th
+  %h2.footer__sign
+    SHIMIZU SHUNSUKE
